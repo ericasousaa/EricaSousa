@@ -6,9 +6,16 @@
 
 body {
     overflow-x: hidden;
-    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Poppins", sans-serif;
     color: #{{ site.data.template.color.secondary-dark }};
 }
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+}
+
 
 .text-muted {
     color: #{{ site.data.template.color.muted }};
@@ -176,9 +183,11 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-brand {
-    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
     color: #{{ site.data.template.color.primary }};
 }
+
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
