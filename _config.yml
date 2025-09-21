@@ -2,68 +2,30 @@ url: "https://ericasousaa.github.io"
 baseurl: "/EricaSousa"
 
 # Site settings
-title: Erica Sousa
-email: your-email@domain.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+title: "Erica Sousa"
+email: "seu-email@exemplo.com"
+description: "Portfólio de projetos em Machine Learning, Visão Computacional e Desenvolvimento."
 
-
-# Team names, titles and social links
+# Team / sobre você (pode usar só um ou remover os outros)
 people:
-- name: Kay Garland
+- name: Erica Sousa
   pic: 1
-  position: Lead Designer
+  position: Desenvolvedora & Estagiária de Machine Learning
   social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: stack-overflow
-      url: #
-
-- name: Larry Parker
-  pic: 2
-  position: Lead Marketer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
+    - title: github
+      url: https://github.com/ericasousaa
     - title: linkedin
-      url: #
-
-- name: Diana Petersen
-  pic: 3
-  position: Lead Developer
-  social:
+      url: https://www.linkedin.com/in/seu-linkedin
     - title: twitter
       url: #
-    - title: facebook
-      url: #
-    - title: google-plus
-      url: #
 
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+# Redes sociais (no rodapé)
 social:
-  - title: twitter
-    url: http://twitter.com/jekyllrb
-  - title: facebook
-    url:
-  - title: stack-overflow
-    url: http://stackoverflow.com/questions/tagged/jekyll
-  - title: bitbucket 
-    url: http://bitbucket.org/jekyll
   - title: github
-    url: http://github.com/jekyll
-
-# Postal address (add as many lines as necessary)
-address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
+    url: https://github.com/ericasousaa
+  - title: linkedin
+    url: https://www.linkedin.com/in/seu-linkedin
 
 # Build settings
 markdown: kramdown
 permalink: pretty
-
-remote_theme: y7kim/agency-jekyll-theme
-plugins:
-  - jekyll-remote-theme
