@@ -284,14 +284,11 @@ header {
 
     min-height: 100vh;  
     background-attachment: scroll;
+    background-image: url('{{ site.baseurl }}/headernovo.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-
-    background-color: #808080; /* cinza padrão */
 }
-
-
 
 
 header .intro-text {
