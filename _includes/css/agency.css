@@ -275,16 +275,19 @@ fieldset[disabled] .btn-xl.active {
 }
 
 header {
+    display: flex;
+    align-items: center; 
+    justify-content: center; /
+    flex-direction: column; 
     text-align: center;
     color: #fff;
+
+    min-height: 100vh;  
     background-attachment: scroll;
     background-image: url('{{ site.baseurl }}/banner4.jpg');
     background-position: center center;
-    background-repeat: none;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
+    background-repeat: no-repeat;
     background-size: cover;
-    -o-background-size: cover;
 }
 
 header .intro-text {
