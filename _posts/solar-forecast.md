@@ -4,8 +4,8 @@ subtitle: Machine Learning Regression
 layout: default
 modal-id: 1
 date: 2025-09-01
-img: /sun.jpg
-thumbnail: /sun.jpg
+img: /sun.png
+thumbnail: /sun.png
 alt: Solar Energy Project
 project-date: Sept 2025
 client: Personal Project
