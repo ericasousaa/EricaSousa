@@ -446,7 +446,14 @@ section h3.section-subheading {
 #portfolio .row {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;  /* define espaçamento horizontal e vertical entre os cards */
+    gap: 40px;   /* controla espaçamento entre os cards */
+    justify-content: center; /* centraliza tudo na horizontal */
+}
+
+#portfolio .portfolio-item {
+    flex: 1 1 22%;  /* força largura responsiva dos cards (~4 por linha em telas grandes) */
+    margin: 0;      /* remove margin lateral extra */
+    max-width: 260px; /* controla largura máxima */
 }
 
 
