@@ -447,12 +447,12 @@ section h3.section-subheading {
 }
 
 /* Cada card ocupa ~30% (3 por linha em telas grandes) */
-#portfolio .portfolio-item {
+/* #portfolio .portfolio-item {
     flex: 1 1 30%;
     max-width: 30%;
     margin: 0;
-    box-sizing: border-box;
-}
+    box-sizing: border-box; */
+/* } */
 
 
 
