@@ -41,12 +41,13 @@
             <b>TMDB 5000 Movies + Credits</b> dataset. I designed a full data workflow: <b>cleaning</b> (duplicates, missing values),
             <b>normalization</b>, and merge of Movies/Credits; engineered a <code>soup</code> feature combining
             <b>keywords, genres, cast, and crew</b>.
-            I evaluated multiple similarity strategies (<b>TF-IDF</b> + cosine, <b>CountVectorizer</b> + cosine; optional sigmoid kernel) and built
-            an <b>EDA</b> with plots (genre distribution, keyword wordcloud) and a <b>similarity heatmap</b> to explain why titles are recommended.
-            The interface is an interactive <b>Streamlit</b> app (search box + dropdown + top-N slider) delivering clear results in the format
-            “Title (Year) · ⭐ rating · 🎭 genres” with a <b>🎥</b> placeholder for posters.
-            Everything is <b>Dockerized</b> for reproducible runs.
-            Roadmap: optional <b>TMDB API</b> for posters, hybrid (content + collaborative), and cloud deploy.
+            Developed a <b>content-based recommender</b> using <b>NLP</b> and similarity measures on the 
+            <b>TMDB 5000 Movies + Credits</b> dataset.  
+            Implemented preprocessing, feature engineering (<code>soup</code> with keywords, genres, cast, crew), and 
+            tested different approaches (<b>TF-IDF</b>, <b>CountVectorizer</b> with cosine similarity).  
+            Built an interactive <b>Streamlit app</b> where users can search movies and get personalized recommendations.  
+            The system was <b>Dockerized</b> for easy deployment, with a roadmap for future improvements 
+            like integrating posters via TMDB API and hybrid recommendation models.
           </p>
         </div>
       </div>
