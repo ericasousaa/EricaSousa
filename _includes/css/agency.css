@@ -409,9 +409,9 @@ section h3.section-subheading {
     height: 250px;      /* altura fixa */
     object-fit: contain; /* mantém proporção sem cortar */
     display: block;
-    margin: 0 auto;     /* centraliza */
-    background-color: #fff; /* fundo branco se sobrar espaço */
-    border-radius: 8px; /* opcional */
+    margin: 0 auto 20px auto;  /* centraliza + espaço abaixo da imagem */
+    background-color: #fff;    /* fundo branco se sobrar espaço */
+    border-radius: 8px;        /* cantos arredondados */
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
@@ -431,16 +431,18 @@ section h3.section-subheading {
 
 /* 🔹 Ajuste de altura mínima para os cards */
 #portfolio .portfolio-caption {
-    min-height: 260px;              /* garante que todos tenham a mesma altura */
+    min-height: 280px;              /* garante altura igual */
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* distribui título e texto */
+    padding: 15px;                  /* respiro interno */
 }
 
 /* 🔹 Espaçamento extra entre os cards */
 #portfolio .portfolio-item {
-    margin-bottom: 40px; /* mais respiro visual */
+    margin: 0 20px 50px 20px; /* laterais + respiro inferior */
 }
+
 
 
 #portfolio .portfolio-item .portfolio-caption p {
