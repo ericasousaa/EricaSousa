@@ -431,12 +431,15 @@ section h3.section-subheading {
 
 /* 🔹 Ajuste de altura mínima para os cards */
 #portfolio .portfolio-caption {
-    min-height: 280px;              /* garante altura igual */
+    min-height: 320px;
+    max-height: 320px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* distribui título e texto */
-    padding: 15px;                  /* respiro interno */
+    overflow-y: auto;       /* ativa rolagem se o texto passar */
+    text-align: justify;
+    padding: 15px;
 }
+
 
 /* Container da linha */
 #portfolio .row {
