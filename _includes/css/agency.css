@@ -434,7 +434,7 @@ section h3.section-subheading {
     min-height: auto;     /* deixa crescer conforme o texto */
     display: flex;
     flex-direction: column;
-    text-align: justify;  /* texto alinhado */
+    text-align: center;  /* texto alinhado */
     padding: 20px;        /* respiro interno */
 }
 
