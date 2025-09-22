@@ -438,20 +438,22 @@ section h3.section-subheading {
     padding: 15px;                  /* respiro interno */
 }
 
-/* 🔹 Ajustes dos cards */
+/* Container da linha */
+#portfolio .row {
+    display: flex;
+    flex-wrap: nowrap;              /* mantém na mesma linha */
+    justify-content: space-around;  /* distribui com espaços iguais */
+    gap: 20px;                      /* espaço entre eles */
+}
+
+/* Cada card ocupa 1/4 da tela */
 #portfolio .portfolio-item {
-    flex: 1 1 22%;         /* cada card ocupa ~22% da largura */
-    max-width: 22%;        /* garante limite de largura */
-    margin: 0 1% 50px 1%;  /* espaçamento lateral + respiro inferior */
+    flex: 1 1 22%;       /* ~25% de largura para 4 cards */
+    max-width: 22%;      /* garante que não ultrapasse */
+    margin: 0;           /* remove margin extra */
     box-sizing: border-box;
 }
 
-/* 🔹 Linha de projetos */
-#portfolio .row {
-    display: flex;
-    flex-wrap: nowrap;        /* mantém todos na mesma linha */
-    justify-content: space-between; /* distribui bem o espaço */
-}
 
 
 #portfolio .portfolio-item .portfolio-caption p {
