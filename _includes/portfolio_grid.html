@@ -7,6 +7,7 @@
         <h3 class="section-subheading text-muted">My projects</h3>
       </div>
     </div>
+
     <div class="row">
 
       <!-- Projeto 1: Solar Energy Forecast -->
@@ -17,18 +18,40 @@
         <div class="portfolio-caption">
           <h4>Solar Energy Forecast</h4>
           <p class="text-muted">
-            Developed a <b>machine learning pipeline</b> to forecast solar energy generation (kWh) from 
-            <b>historical radiation and weather data</b>. Implemented feature engineering for seasonal and 
-            climatic variables, data normalization, and lag variables.  
-            Trained a <b>Random Forest Regressor</b> to achieve reliable energy predictions.  
-            Delivered as a complete solution with a <b>FastAPI REST endpoint</b> (`/predict_solar`) and an 
-            interactive <b>Streamlit dashboard</b> for visualization of predictions, metrics, and charts.  
+            Developed a <b>machine learning pipeline</b> to forecast solar energy generation (kWh) from
+            <b>historical radiation and weather data</b>. Implemented feature engineering for seasonal and
+            climatic variables, data normalization, and lag variables.
+            Trained a <b>Random Forest Regressor</b> to achieve reliable energy predictions.
+            Delivered as a complete solution with a <b>FastAPI REST endpoint</b> (/predict_solar) and an
+            interactive <b>Streamlit dashboard</b> for visualization of predictions, metrics, and charts.
             Entire project was <b>containerized with Docker</b> for reproducibility and deployment in any environment.
           </p>
         </div>
       </div>
 
-      <!-- Projeto 2: Flower Classifier -->
+      <!-- Projeto 2 : Movie Recommendation System -->
+      <div class="col-md-4 col-sm-6 portfolio-item">
+        <a href="https://github.com/ericasousaa/Movie-Recommendation" target="_blank" class="portfolio-link">
+          <img src="img/portfolio/cinema.png" class="img-responsive img-centered" alt="Movie Recommendation System">
+        </a>
+        <div class="portfolio-caption">
+          <h4>Movie Recommendation System</h4>
+          <p class="text-muted">
+            End-to-end <b>content-based recommender</b> built in <b>Python</b> using <b>NLP</b> to suggest similar movies from the
+            <b>TMDB 5000 Movies + Credits</b> dataset. I designed a full data workflow: <b>cleaning</b> (duplicates, missing values),
+            <b>normalization</b>, and merge of Movies/Credits; engineered a <code>soup</code> feature combining
+            <b>keywords, genres, cast, and crew</b>.
+            I evaluated multiple similarity strategies (<b>TF-IDF</b> + cosine, <b>CountVectorizer</b> + cosine; optional sigmoid kernel) and built
+            an <b>EDA</b> with plots (genre distribution, keyword wordcloud) and a <b>similarity heatmap</b> to explain why titles are recommended.
+            The interface is an interactive <b>Streamlit</b> app (search box + dropdown + top-N slider) delivering clear results in the format
+            “Title (Year) · ⭐ rating · 🎭 genres” with a <b>🎥</b> placeholder for posters.
+            Everything is <b>Dockerized</b> for reproducible runs.
+            Roadmap: optional <b>TMDB API</b> for posters, hybrid (content + collaborative), and cloud deploy.
+          </p>
+        </div>
+      </div>
+
+      <!-- Projeto 3 : Flower Classifier -->
       <div class="col-md-4 col-sm-6 portfolio-item">
         <a href="https://github.com/ericasousaa/Flower-Classifier" target="_blank" class="portfolio-link">
           <img src="img/portfolio/flor.png" class="img-responsive img-centered" alt="Flower Classifier">
@@ -36,18 +59,18 @@
         <div class="portfolio-caption">
           <h4>Flower Classifier</h4>
           <p class="text-muted">
-            Built a <b>deep learning image classifier</b> for five flower species using 
-            <b>TensorFlow/Keras</b>. Implemented a full data pipeline with <b>image loading, normalization, 
-            caching, shuffling, and prefetching</b> for efficient GPU training.  
-            Leveraged <b>transfer learning with EfficientNetB0</b> pretrained on ImageNet, achieving 
-            <b>92% validation accuracy</b>.  
-            Implemented model saving and visual prediction outputs with probabilities, making the project 
+            Built a <b>deep learning image classifier</b> for five flower species using
+            <b>TensorFlow/Keras</b>. Implemented a full data pipeline with <b>image loading, normalization,
+            caching, shuffling, and prefetching</b> for efficient GPU training.
+            Leveraged <b>transfer learning with EfficientNetB0</b> pretrained on ImageNet, achieving
+            <b>92% validation accuracy</b>.
+            Implemented model saving and visual prediction outputs with probabilities, making the project
             suitable for both educational and practical use in computer vision tasks.
           </p>
         </div>
       </div>
 
-      <!-- Projeto 3: Library Management -->
+      <!-- Projeto 4 : Library Management -->
       <div class="col-md-4 col-sm-6 portfolio-item">
         <a href="https://github.com/ericasousaa/Projeto-Gerenciamento_de_biblioteca" target="_blank" class="portfolio-link">
           <img src="img/portfolio/livros.png" class="img-responsive img-centered" alt="Library System">
@@ -55,17 +78,18 @@
         <div class="portfolio-caption">
           <h4>Library Management System</h4>
           <p class="text-muted">
-            Personal project written in <b>Python</b> to explore <b>data structures, algorithms, and 
-            object-oriented programming</b>.  
-            Includes features to <b>add, search, borrow, and return books</b>, with automatic status updates 
-            (“available” or “borrowed”).  
-            Implements a dynamic <b>menu-driven interface</b> to handle user interaction, error handling, 
-            and iterative program flow until exit.  
-            Designed as a study case to simulate a real-world library system, reinforcing knowledge of 
+            Personal project written in <b>Python</b> to explore <b>data structures, algorithms, and
+            object-oriented programming</b>.
+            Includes features to <b>add, search, borrow, and return books</b>, with automatic status updates
+            (“available” or “borrowed”).
+            Implements a dynamic <b>menu-driven interface</b> to handle user interaction, error handling,
+            and iterative program flow until exit.
+            Designed as a study case to simulate a real-world library system, reinforcing knowledge of
             <b>collections, loops, and conditionals</b>.
           </p>
         </div>
       </div>
+
     </div>
   </div>
 </section>
