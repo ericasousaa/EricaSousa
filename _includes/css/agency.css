@@ -441,7 +441,7 @@ section h3.section-subheading {
 /* Container da linha */
 #portfolio .row {
     display: flex;
-    flex-wrap: wrap;                /* permite quebrar linha se precisar */
+    /* flex-wrap: wrap;                /* permite quebrar linha se precisar */ */
     justify-content: space-around;  /* distribui com espaços iguais */
     gap: 30px;                      /* espaço entre os cards */
 }
