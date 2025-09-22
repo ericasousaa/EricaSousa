@@ -431,30 +431,29 @@ section h3.section-subheading {
 
 /* 🔹 Ajuste de altura mínima para os cards */
 #portfolio .portfolio-caption {
-    min-height: 420px;   /* altura maior da caixa de texto */
+    min-height: auto;     /* deixa crescer conforme o texto */
     display: flex;
     flex-direction: column;
-    text-align: justify; /* deixa o texto alinhado */
-    padding: 20px;       /* respiro interno */
+    text-align: justify;  /* texto alinhado */
+    padding: 20px;        /* respiro interno */
 }
-
-
 
 /* Container da linha */
 #portfolio .row {
     display: flex;
-    flex-wrap: nowrap;              /* mantém na mesma linha */
+    flex-wrap: wrap;                /* permite quebrar linha se precisar */
     justify-content: space-around;  /* distribui com espaços iguais */
-    gap: 20px;                      /* espaço entre eles */
+    gap: 30px;                      /* espaço entre os cards */
 }
 
-/* Cada card ocupa 1/4 da tela */
+/* Cada card ocupa ~30% (3 por linha em telas grandes) */
 #portfolio .portfolio-item {
-    flex: 1 1 22%;       /* ~25% de largura para 4 cards */
-    max-width: 22%;      /* garante que não ultrapasse */
-    margin: 0;           /* remove margin extra */
+    flex: 1 1 30%;
+    max-width: 30%;
+    margin: 0;
     box-sizing: border-box;
 }
+
 
 
 
