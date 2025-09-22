@@ -409,7 +409,7 @@ section h3.section-subheading {
     height: 250px;      /* altura fixa */
     object-fit: contain; /* mantém proporção sem cortar */
     display: block;
-    margin: 0 auto 20px auto;  /* centraliza + espaço abaixo da imagem */
+    margin: 0 auto 10px auto;  /* centraliza + espaço abaixo da imagem */
     background-color: #fff;    /* fundo branco se sobrar espaço */
     border-radius: 8px;        /* cantos arredondados */
 }
@@ -449,7 +449,7 @@ section h3.section-subheading {
 /* Cada card ocupa ~30% (3 por linha em telas grandes) */
 #portfolio .portfolio-item {
     flex: 1 1 30%;
-    max-width: 30%;
+    max-width: 50%;
     margin: 0;
     box-sizing: border-box;
 }
