@@ -897,40 +897,49 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
 }
-/* ===== CERTIFICATES SECTION ===== */
+/* ============================= */
+/*        CERTIFICATES           */
+/* ============================= */
 
 #certificates {
-    padding: 80px 0;
+    padding: 100px 0;
 }
 
-/* Espaçamento entre colunas */
+/* Layout com 2 por linha e espaçamento */
 #certificates .row {
-    margin-left: -55px;
-    margin-right: -55px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px; /* espaço entre os certificados */
 }
 
-/* Cada card */
+/* Cada certificado */
 #certificates .portfolio-item {
-    padding: 50px;
+    flex: 0 0 45%;  /* ocupa 45% para caber 2 com gap */
+    max-width: 45%;
     box-sizing: border-box;
-}
-
-/* Remover fundo branco padrão do tema */
-#certificates .portfolio-caption {
-    background: transparent !important;
-    padding-top: 15px;
-}
-
-/* Remover fundo e sombra */
-#certificates .portfolio-item {
     background: transparent !important;
     box-shadow: none !important;
 }
 
-/* Ajuste das imagens */
+/* Remove fundo branco do texto */
+#certificates .portfolio-caption {
+    background: transparent !important;
+    padding-top: 20px;
+}
+
+/* IMAGEM GRANDE */
 #certificates .portfolio-item img {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 12px;
+    border-radius: 14px;
+}
+
+/* Responsivo - celular */
+@media (max-width: 768px) {
+    #certificates .portfolio-item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
