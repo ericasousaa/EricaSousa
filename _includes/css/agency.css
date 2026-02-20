@@ -905,6 +905,6 @@ body {
     object-fit: contain; /* mantém proporção */
     display: block;
     margin: 0 auto 10px auto;
-    background-color: #fff;
+    background-color: transparent;
     border-radius: 8px;
 }
