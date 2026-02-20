@@ -897,57 +897,26 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
 }
-/* ============================= */
-/*        CERTIFICATES           */
-/* ============================= */
+/* CERTIFICATES */
 
 #certificates {
     padding: 100px 0;
 }
 
-/* Layout 3 por linha */
-#certificates .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px; /* espaço entre elas */
-}
-
-/* Cada certificado */
 #certificates .portfolio-item {
-    flex: 0 0 32%;
-    max-width: 32%;
-    box-sizing: border-box;
+    margin-bottom: 50px;
     background: transparent !important;
     box-shadow: none !important;
 }
 
-/* Remove fundo branco */
 #certificates .portfolio-caption {
     background: transparent !important;
     padding-top: 20px;
 }
 
-/* IMAGEM GRANDE */
 #certificates .portfolio-item img {
     width: 100%;
-    height: 280px;        /* AQUI controla o tamanho */
-    object-fit: cover;    /* deixa mais impactante */
-    border-radius: 14px;
-}
-
-/* Tablet */
-@media (max-width: 992px) {
-    #certificates .portfolio-item {
-        flex: 0 0 48%;
-        max-width: 48%;
-    }
-}
-
-/* Celular */
-@media (max-width: 768px) {
-    #certificates .portfolio-item {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
+    height: 320px;   /* AQUI aumenta a imagem */
+    object-fit: cover;
+    border-radius: 16px;
 }
