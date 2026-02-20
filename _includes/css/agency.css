@@ -920,3 +920,7 @@ body {
     object-fit: contain;
     border-radius: 16px;
 }
+
+#certificates .portfolio-link {
+    cursor: pointer;
+}
