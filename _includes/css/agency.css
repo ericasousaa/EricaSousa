@@ -908,3 +908,11 @@ body {
     background-color: transparent;
     border-radius: 8px;
 }
+#certificates .row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+#certificates .portfolio-item {
+    padding: 15px;
+}
