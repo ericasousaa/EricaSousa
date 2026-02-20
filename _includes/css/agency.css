@@ -897,22 +897,40 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
 }
-/* Certificates - aumentar tamanho das imagens */
-#certificates .portfolio-item img {
-    width: 400%;
-    max-width: 400px;   /* pode aumentar mais se quiser */
-    height: 320px;      /* controla a altura */
-    object-fit: contain; /* mantém proporção */
-    display: block;
-    margin: 0 auto 10px auto;
-    background-color: transparent;
-    border-radius: 8px;
-}
-#certificates .row {
-    margin-left: -25px;
-    margin-right: -25px;
+/* ===== CERTIFICATES SECTION ===== */
+
+#certificates {
+    padding: 80px 0;
 }
 
+/* Espaçamento entre colunas */
+#certificates .row {
+    margin-left: -55px;
+    margin-right: -55px;
+}
+
+/* Cada card */
 #certificates .portfolio-item {
-    padding: 25px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+/* Remover fundo branco padrão do tema */
+#certificates .portfolio-caption {
+    background: transparent !important;
+    padding-top: 15px;
+}
+
+/* Remover fundo e sombra */
+#certificates .portfolio-item {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+/* Ajuste das imagens */
+#certificates .portfolio-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
 }
