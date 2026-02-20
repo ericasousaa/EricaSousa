@@ -897,3 +897,14 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
 }
+/* Certificates - aumentar tamanho das imagens */
+#certificates .portfolio-item img {
+    width: 100%;
+    max-width: 300px;   /* pode aumentar mais se quiser */
+    height: 320px;      /* controla a altura */
+    object-fit: contain; /* mantém proporção */
+    display: block;
+    margin: 0 auto 10px auto;
+    background-color: #fff;
+    border-radius: 8px;
+}
