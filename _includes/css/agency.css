@@ -899,8 +899,8 @@ body {
 }
 /* Certificates - aumentar tamanho das imagens */
 #certificates .portfolio-item img {
-    width: 100%;
-    max-width: 300px;   /* pode aumentar mais se quiser */
+    width: 400%;
+    max-width: 400px;   /* pode aumentar mais se quiser */
     height: 320px;      /* controla a altura */
     object-fit: contain; /* mantém proporção */
     display: block;
