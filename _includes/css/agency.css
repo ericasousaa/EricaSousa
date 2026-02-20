@@ -905,18 +905,18 @@ body {
     padding: 100px 0;
 }
 
-/* Layout com 2 por linha e espaçamento */
+/* Layout 3 por linha */
 #certificates .row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 50px; /* espaço entre os certificados */
+    gap: 40px; /* espaço entre elas */
 }
 
 /* Cada certificado */
 #certificates .portfolio-item {
-    flex: 0 0 45%;  /* ocupa 45% para caber 2 com gap */
-    max-width: 45%;
+    flex: 0 0 30%;   /* 3 por linha */
+    max-width: 30%;
     box-sizing: border-box;
     background: transparent !important;
     box-shadow: none !important;
@@ -928,7 +928,7 @@ body {
     padding-top: 20px;
 }
 
-/* IMAGEM GRANDE */
+/* Imagens grandes */
 #certificates .portfolio-item img {
     width: 100%;
     height: auto;
@@ -936,7 +936,15 @@ body {
     border-radius: 14px;
 }
 
-/* Responsivo - celular */
+/* Tablet */
+@media (max-width: 992px) {
+    #certificates .portfolio-item {
+        flex: 0 0 45%;
+        max-width: 45%;
+    }
+}
+
+/* Celular */
 @media (max-width: 768px) {
     #certificates .portfolio-item {
         flex: 0 0 100%;
